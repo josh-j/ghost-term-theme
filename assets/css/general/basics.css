@@ -1,0 +1,57 @@
+:root {
+    --brand-color: #61afef;
+    --primary-text-color: #d4d4d4;
+    --secondary-text-color: #abb2bf;
+    --white-color: #1e1e1e;
+    --lighter-gray-color: #282c34;
+    --light-gray-color: #3e4451;
+    --mid-gray-color: #5c6370;
+    --dark-gray-color: #abb2bf;
+    --darker-gray-color: #ffffff;
+    --black-color: #000000;
+    --green-color: #98c379;
+    --orange-color: #e5c07b;
+    --red-color: #e06c75;
+    --facebook-color: #3b5998;
+    --twitter-color: #1da1f2;
+    --linkedin-color: #0B66C3;
+    --bluesky-color: #1185FE;
+    --threads-color: #000000;
+    --mastodon-color: #6364FF;
+    --tiktok-color: #000000;
+    --youtube-color: #ff0000;
+    --instagram-color: #000000;
+    --rss-color: #f26522;
+    --animation-base: ease-in-out;
+    --font-mono: "JetBrains Mono", "Fira Code", "Cascadia Code", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+    --font-sans: var(--font-mono);
+    --font-serif: var(--font-mono);
+    --navbar-height: 80px;
+    --content-font-size: 1.6rem;
+    --header-spacing: 60px;
+}
+
+@media (max-width: 767px) {
+    :root {
+        --header-spacing: 30px;
+    }
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
+}
+
+a {
+    color: var(--darker-gray-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+    color: var(--darker-gray-color);
+}
