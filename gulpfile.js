@@ -45,7 +45,7 @@ function css(done) {
             autoprefixer(),
             cssnano()
         ]),
-        dest('assets/built/', {sourcemaps: '.'}),
+        dest('assets/built/', {sourcemaps: '.', mode: 0o644}),
         livereload()
     ], handleError(done));
 }
@@ -70,7 +70,7 @@ function js(done) {
         order(getJsFiles('v1'), {sourcemaps: true}),
         concat('main.min.js'),
         uglify(),
-        dest('assets/built/', {sourcemaps: '.'}),
+        dest('assets/built/', {sourcemaps: '.', mode: 0o644}),
         livereload()
     ], handleError(done));
 }

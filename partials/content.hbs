@@ -54,8 +54,16 @@
         </header>
     {{/match}}
 
-    <div class="single-content gh-content gh-canvas">
-        {{content}}
+    <div class="single-content-wrapper">
+        <aside class="gh-toc-container">
+            <nav class="gh-toc"></nav>
+        </aside>
+        <button class="gh-toc-toggle" aria-label="Toggle table of contents">
+            {{> "icons/toc"}}
+        </button>
+        <div class="single-content gh-content gh-canvas">
+            {{content}}
+        </div>
     </div>
 
     {{#is "post"}}

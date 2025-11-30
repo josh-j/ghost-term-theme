@@ -15,14 +15,10 @@
 }
 
 .gh-head-menu .nav li a::before {
-    content: " | ";
-    color: var(--mid-gray-color);
-    margin-right: 5px;
-}
-
-.gh-head-menu .nav li:first-child a::before {
-    content: "";
-    display: none;
+    content: "/";
+    color: var(--accent-gold);
+    font-weight: 900;
+    font-size: 1.1em;
 }
 
 .gh-head-menu .nav li a {
@@ -31,8 +27,8 @@
 }
 
 .gh-head-menu .nav li a:hover {
-    color: var(--orange-color);
-    text-decoration: underline;
+    color: var(--accent-cyan);
+    text-decoration: none;
 }
 
 .gh-head-actions {
